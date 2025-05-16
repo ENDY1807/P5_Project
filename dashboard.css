@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Montserrat:wght@400;600&display=swap');
+  :root {
+    --pink-light: #f9e5e8;
+    --pink-dark: #b24059;
+    --text-color: #4a2c38;
+    --accent-color: #e07189;
+    --background: #fff7f8;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(135deg, var(--pink-light), #ffe3e6);
+    padding: 5rem 2rem 6rem;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(178, 64, 89, 0.3);
+  }
+  header h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    color: var(--pink-dark);
+  }
+  header p {
+    font-weight: 600;
+    font-size: 1.25rem;
+    max-width: 450px;
+    margin: 0 auto 2rem;
+    color: #7a4a5a;
+  }
+  header button {
+    background-color: var(--pink-dark);
+    color: white;
+    border: none;
+    padding: 1rem 3rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(178, 64, 89, 0.5);
+    transition: background-color 0.3s ease;
+  }
+  header button:hover {
+    background-color: #d94c6c;
+  }
+
+  main {
+    max-width: 960px;
+    margin: -4rem auto 3rem;
+    padding: 0 1.5rem;
+  }
+
+  section {
+    background: white;
+    border-radius: 20px;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 6px 18px rgba(178, 64, 89, 0.15);
+  }
+
+  section h2 {
+    font-family: 'Sacramento', cursive;
+    font-size: 2.8rem;
+    color: var(--pink-dark);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .about-text {
+    font-size: 1.15rem;
+    text-align: center;
+    color: #704551;
+    max-width: 700px;
+    margin: 0 auto;
+    font-weight: 500;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 1.4rem;
+  }
+  .gallery img {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(178, 64, 89, 0.2);
+    object-fit: cover;
+    height: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(178, 64, 89, 0.35);
+  }
+
+  ul.benefits-list {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #7f4d5a;
+  }
+  ul.benefits-list li {
+    background: var(--pink-light);
+    margin: 1rem 0;
+    padding: 1rem 1.6rem;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.15rem;
+    box-shadow: 0 4px 12px rgba(178, 64, 89, 0.12);
+    position: relative;
+  }
+  ul.benefits-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--pink-dark);
+    font-weight: 800;
+    font-size: 1.3rem;
+  }
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+  }
+  input[type="tel"] {
+    padding: 0.85rem 1.1rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: 2px solid var(--pink-dark);
+    outline-color: #d85371;
+    transition: border-color 0.3s ease;
+  }
+  input[type="tel"]:focus {
+    border-color: #d85371;
+  }
+  button[type="submit"] {
+    background-color: var(--pink-dark);
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 600;
+    padding: 1rem 0;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(178, 64, 89, 0.4);
+    transition: background-color 0.3s ease;
+  }
+  button[type="submit"]:hover {
+    background-color: #d94c6c;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    color: #9e626fcc;
+  }
+
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 3rem;
+    }
+    header p {
+      font-size: 1.05rem;
+      max-width: 90vw;
+    }
+    main {
+      margin: -3rem auto 2rem;
+    }
+  }
