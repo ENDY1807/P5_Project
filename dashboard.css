@@ -166,6 +166,12 @@
     background-color: #d94c6c;
   }
 
+  #contact{
+    display: flex;
+    justify_content: center;
+    align_item: center;
+  }
+
   footer {
     text-align: center;
     padding: 2rem 1rem;
