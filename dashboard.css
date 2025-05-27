@@ -170,6 +170,7 @@
     display: flex;
     justify_content: center;
     align_item: center;
+    flex-direction: column;
   }
 
   footer {
